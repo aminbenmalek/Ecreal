@@ -1,0 +1,44 @@
+{
+  "name": "e-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-pdf/renderer": "^2.1.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "multer-sftp": "^1.1.1",
+    "oracledb": "^5.4.0",
+    "react-scripts": "^5.0.1",
+    "ssh2-sftp-client": "^8.0.0",
+    "stream": "^0.0.2",
+    "xlsx": "^0.17.4",
+    "zlib": "^1.0.5"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
+  }
+}
